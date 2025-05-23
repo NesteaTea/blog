@@ -1,0 +1,88 @@
+.card {
+    background-color: #fff;
+    max-width: 940px;
+    padding: 15px 15px 24px 15px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    .cardHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .titleLike {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            margin-bottom: 7px;
+
+            .title {
+                font-size: 20px;
+                color: rgb(24, 144, 255);
+            }
+
+            .like {
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 12px;
+                }
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            padding: 2px 5px;
+
+            &+.tag {
+                margin-left: 5px;
+            }
+        }
+
+        .userInfo {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+
+            .info {
+                text-align: right;
+
+                .name {
+                    font-size: 18px;
+                }
+
+                .date {
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            .avatar {
+                img {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .descriptionCard {
+        margin-top: 5px;
+        text-align: left;
+        width: 680px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    &+.card {
+        margin-top: 26px;
+    }
+}

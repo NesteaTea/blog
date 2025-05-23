@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 26px 0;
+
+    .pagination {
+        margin-top: 20px;
+    }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}

@@ -1,0 +1,59 @@
+.header {
+    background-color: #fff;
+    
+    .headerWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 15px 22px;
+    
+        .title {
+            font-size: 18px;
+        }
+    
+        .infoWrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+    
+            .createArticle {
+                color: #52c41a;
+                border: 1px solid #52c41a;
+                border-radius: 5px;
+                padding: 6px 10px;
+            }
+
+            .userInfo {
+                display: flex;
+                align-items: center;
+                column-gap: 13px;
+
+                .name {
+                    font-size: 18px;
+                }
+
+                .avatar {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                }
+            }
+
+            .logOut {
+                font-size: 18px;
+                border: 1px solid rgba(0, 0, 0, 0.75);
+                padding: 8px 18px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+}

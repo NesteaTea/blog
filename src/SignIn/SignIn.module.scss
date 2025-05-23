@@ -1,0 +1,78 @@
+.wrapper {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    .signIn {
+        display: inline-block;
+        padding: 48px 32px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 0.61px 2.93px 0px rgba(0, 0, 0, 0.02), 0px 1.46px 7.05px 0px rgba(0, 0, 0, 0.03), 0px 2.75px 13.27px 0px rgba(0, 0, 0, 0.04), 0px 4.91px 23.68px 0px rgba(0, 0, 0, 0.04), 0px 9.19px 44.28px 0px rgba(0, 0, 0, 0.05), 0px 22px 106px 0px rgba(0, 0, 0, 0.07);
+
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            .inputWrapper {
+                display: flex;
+                flex-direction: column;
+
+                &+.inputWrapper {
+                    margin-top: 12px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 2px;
+                }
+
+                input {
+                    width: 320px;
+                    padding: 8px 12px;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 4px;
+
+                    &::placeholder {
+                        color: #BFBFBF;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 8px 0;
+                text-align: center;
+                background-color: #1890FF;
+                color: #fff;
+                border-radius: 4px;
+                margin-top: 20px;
+            }
+        }
+
+        .auth {
+            font-size: 12px;
+            margin-top: 8px;
+            text-align: center;
+            color: #8C8C8C;
+
+            a {
+                color: #1890FF;
+            }
+        }
+
+    }
+}
+
+.error {
+    color: #F5222D;
+    font-size: 14px;
+    margin-top: 2px;
+}
