@@ -1,1 +1,1 @@
-https://blog-zeta-lyart-24.vercel.app/
+https://blog-beige-chi.vercel.app/
