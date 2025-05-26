@@ -40,7 +40,7 @@ export default function CreatePost() {
         };
         try {
             await createPost(post).unwrap();
-            navigate('/articles');
+            navigate('/');
         } catch (error) {
             console.error('Ошибка при создании поста:', error);
         }
@@ -55,17 +55,26 @@ export default function CreatePost() {
                     <div className={CreatePostClasses.formContainer}>
                         <div className={CreatePostClasses.formWrapper}>
                             <label>Title</label>
-                            <input {...register("title", { required: true })} placeholder='Title' />
+                            <input {...register("title", {
+                                required: "Title обязателен для заполнения",
+                                validate: value => value.trim() !== "" || "Title не может состоять только из пробелов"
+                            })} placeholder='Title' />
                             {errors.title && <span>Title обязателен для заполнения</span>}
                         </div>
                         <div className={CreatePostClasses.formWrapper}>
                             <label>Short description</label>
-                            <input {...register("description", { required: true })} placeholder='Short description' />
+                            <input {...register("description", {
+                                required: "Short description обязателен для заполнения",
+                                validate: value => value.trim() !== "" || "Short description не может состоять только из пробелов"
+                            })} placeholder='Short description' />
                             {errors.description && <span>Description обязателен для заполнения</span>}
                         </div>
                         <div className={CreatePostClasses.formWrapper}>
                             <label>Text</label>
-                            <textarea {...register("text", { required: true })} placeholder='Text' />
+                            <textarea {...register("text", {
+                                required: "Text обязателен для заполнения",
+                                validate: value => value.trim() !== "" || "Text не может состоять только из пробелов"
+                            })} placeholder='Text' />
                             {errors.text && <span>Text обязателен для заполнения</span>}
                         </div>
                         <div className={CreatePostClasses.tagsWrapper}>
